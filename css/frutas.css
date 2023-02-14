@@ -1,0 +1,115 @@
+.seccion-frutas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 1440px) {
+    .seccion-frutas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.contenedor_frutas .descripcion__frutas img {
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    animation: escalar 3s infinite alternate;
+}
+
+@media (min-width: 1440px) {
+    .contenedor_frutas .descripcion__frutas img {
+        max-width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        animation: escalar 3s infinite alternate;
+    }
+}
+
+main h3 {
+    text-align: center;
+}
+
+.contenedor_frutas {
+    display: flex;
+}
+
+@keyframes escalar {
+    to {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.03);
+    }
+}
+
+.descripcion__frutas {
+    margin: 1rem;
+}
+
+.descripcion__frutas h3 {
+    height: 3rem;
+    text-align: center;
+}
+
+.contenedor_frutas .descripcion__frutas ul {
+    width: 30rem;
+    margin-left: 8rem;
+}
+
+@media (min-width: 1440px) {
+    .contenedor_frutas .descripcion__frutas ul {
+        width: 40rem;
+        margin-left: 12rem;
+    }
+}
+
+
+/* Ejercicios */
+
+
+.blog article .ejercicios img {
+    max-width: 90%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .detalles-ejercicios {
+        width: 130rem;
+    }
+}
+
+.div-formulario {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0, rgba(255, 255, 255, 0.8) -6px -2px 16px 0; */
+    width: 40%;
+    height: 35rem;
+}
+
+.div-formulario .formulario-inicio-sesion div label {
+    display: inline-block;
+    width: 225px;
+    font-size: 2rem;
+}
